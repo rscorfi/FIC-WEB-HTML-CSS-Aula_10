@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exemplo aula 10</title>
+</head>
+<body>
+    <form action="/action_page.php" target="_blank">
+        <input type="search" id="fname" name="fname">
+        <button type="button">Butão</button>
+        <button type="reset">Recomeçar</button>
+        <button type="submit">Entrar</button>
+        <textarea name="message" rows="10" cols="25">
+            And the cats in the cradle and the silver spoon.
+            Little boy blue and the man on the moon!
+        </textarea>
+        <fieldset>
+            <legend>Como prefere o nosso contato</legend>
+            <input type="radio" name="contato" value="email" id="rademail">
+            <input type="radio" name="contato" value="telefone" id="radtelefone">
+            <input type="radio" name="contato" value="whatsapp" id="radwhatsapp" checked>
+            <input type="button" value="OK">
+        </fieldset>
+        <label for="nomesobrenome">Nome e Sobrenemo</label>
+        <input type="text" id="nomesobrenome" required>
+        <input type="submit" value="Submit Form">        
+
+        <label for="email">E-mail</label>
+        <input type="email" id="email" required placeholder="seuemail@dominio.com">
+        
+        <label for="telefone">telefone</label>
+        <input type="tel" id="telefone" required placeholder="(XX) XXXXX-XXXX">
+        
+        <fieldset>            
+            <label for="carro">Escolha um carro:</label>
+            <select name="carros" id="carros">
+                <option value="volvo">Volvo</option>
+                <option value="saab">Saab</option>
+                <option value="mercedes">Mercedes</option>
+                <option value="audi">Audi</option>
+            </select>
+        </fieldset>
+        <fieldset>            
+            <legend>Qual horário gostaria de ser atendido?</legend>
+            <select multiple size="2">
+                <option>Manhã</option>
+                <option>Tarde</option>
+                <option>Noite</option>
+            </select>
+        </fieldset>
+        <fieldset>
+            <label for="browser">Escolha um navegador:</label>
+            <input list="browsers" name="browser" id="browser">
+            <datalist id="browsers">
+                <option value="Edge"></option>
+                <option value="Firefox"></option>
+                <option value="Chrome"></option>
+                <option value="Opera"></option>
+            </datalist>
+        </fieldset>
+    </form>
+    <form action="/action_page.php">
+        Favorite color:
+        Blue
+        <input value="blue" type="radio" name="color">
+        Red
+        <input value="red" type="radio" name="color">
+        <input type="button" value="Click Me">
+        <input type="number" min="1" max="5">
+    </form>
+</body>
+</html>
